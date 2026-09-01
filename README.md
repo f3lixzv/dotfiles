@@ -1,5 +1,5 @@
 # 🏠 My Dotfiles
-
+![Desktop](assets/dotfiles.png)
 My personal Arch Linux configuration managed with **GNU Stow**.
 
 Built around a minimal Wayland desktop with **Niri** and **DankMaterialShell**.
