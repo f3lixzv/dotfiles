@@ -52,7 +52,6 @@
         },
         {
             "type": "packages",
-            "format": "{} (pacman)",
             "key": " ",
             "keyColor": "white"
         },
