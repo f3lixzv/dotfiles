@@ -1,0 +1,39 @@
+# Main background
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#d0d0d0"
+
+# Title color for boxes
+theme[title]="#e0e0e0"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#83909a"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#262626"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#e0e0e0"
+
+# Color of inactive text
+theme[inactive_fg]="#4e4e4e"
+
+# Graph color gradients (Monochrome / Cold Slate)
+theme[cpu_start]="#4e4e4e"
+theme[cpu_mid]="#83909a"
+theme[cpu_end]="#d0d0d0"
+
+theme[free]="#4e4e4e"
+theme[cached]="#6f7a82"
+theme[available]="#83909a"
+theme[used]="#d0d0d0"
+
+theme[download_start]="#4e4e4e"
+theme[download_mid]="#728484"
+theme[download_end]="#d0d0d0"
+
+theme[upload_start]="#4e4e4e"
+theme[upload_mid]="#8a7b7c"
+theme[upload_end]="#d0d0d0"
+
