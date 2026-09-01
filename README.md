@@ -1,70 +1,51 @@
-# 🏠 My Dotfiles
+# dotfiles
 ![Desktop](assets/dotfiles.png)
-My personal Arch Linux configuration managed with **GNU Stow**.
+My personal configuration files for Arch Linux.
 
-Built around a minimal Wayland desktop with **Niri** and **DankMaterialShell**.
+Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-## ✨ What's Included
+## Setup
 
-| Package             | Description                          |
-| ------------------- | ------------------------------------ |
-| `niri`              | Niri compositor configuration        |
-| `DankMaterialShell` | DankMaterialShell configuration      |
-| `kitty`             | Kitty terminal configuration & theme |
-| `fastfetch`         | Fastfetch configuration              |
-| `btop`              | btop configuration & theme           |
-| `cava`              | Cava visualizer configuration        |
-| `qt6ct`             | Qt6 configuration & theme            |
-| `gtk-3.0`           | GTK 3 theme configuration            |
-| `gtk-4.0`           | GTK 4 theme configuration            |
-| `vesktop`           | Vesktop Discord theme                |
+* OS: Arch Linux
+* WM: Niri
+* Shell: DankMaterialShell
+* Terminal: Kitty
+* Fetch: Fastfetch
+* System monitor: btop
+* Audio visualizer: Cava
+* Discord client: Vesktop
 
-## 📦 Installation
+## Configs
 
-Clone the repository:
+```text
+btop/
+cava/
+dms/
+fastfetch/
+gtk3/
+gtk4/
+kitty/
+niri/
+qt6ct/
+vesktop/
+```
+
+## Installation
 
 ```bash
 git clone git@github.com:f3lixzv/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-```
-
-Install GNU Stow:
-
-```bash
-sudo pacman -S stow
-```
-
-Then stow the configurations:
-
-```bash
 stow */
 ```
 
-That's it. The configurations will be symlinked into `~/.config`.
-
-## 🔄 Updating
-
-After changing a configuration:
+## Updating
 
 ```bash
 cd ~/dotfiles
 git add .
-git commit -m "Update configs"
+git commit -m "Update dotfiles"
 git push
 ```
 
-## 🖥️ Setup
+![Desktop](assets/dotfiles.png)
 
-* **OS:** Arch Linux
-* **Compositor:** Niri
-* **Shell:** DankMaterialShell
-* **Terminal:** Kitty
-* **Visualizer:** Cava
-* **System monitor:** btop
-* **Fetch:** Fastfetch
-* **Discord client:** Vesktop
-* **Config management:** GNU Stow
-
----
-
-*Personal configuration files for my Arch Linux setup.*
