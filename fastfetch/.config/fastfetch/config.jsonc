@@ -1,158 +1,113 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  HYPRLAND
+//
+//  by Bina
+
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "builtin",
         "source": "arch",
+        "type": "auto",
+        "padding": {
+            "top": 2
+        },
         "color": {
             "1": "white",
             "2": "white"
-        },
-        "height": 15,
-        "width": 30,
-        "padding": {
-            "top": 5,
-            "left": 3
         }
     },
     "display": {
-        "color": {
-            "keys": "white",
-            "title": "white",
-            "output": "white"
-        }
+        "separator": " "
     },
     "modules": [
         "break",
-        {
-            "type": "custom",
-            "format": "\u001b[97m┌──────────────────────Hardware──────────────────────┐"
-        },
-        {
-            "type": "host",
-            "key": "󰌢  PC",
-            "keyColor": "white"
-        },
-        {
-            "type": "cpu",
-            "key": "│ ├󰻠 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "gpu",
-            "key": "│ ├󰍹 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "memory",
-            "key": "│ ├󰑭 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "disk",
-            "key": "└ └󰋊 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[97m└────────────────────────────────────────────────────┘"
-        },
+        "break",
         "break",
         {
             "type": "custom",
-            "format": "\u001b[97m┌──────────────────────Software──────────────────────┐"
+            "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m"
         },
+        "break",
+        {
+            "type": "title",
+            "keyWidth": 10,
+            "color": {
+                "user": "white",
+                "at": "bright_black",
+                "host": "white"
+            }
+        },
+        "break",
         {
             "type": "os",
-            "key": "  OS",
+            "key": " ",
             "keyColor": "white"
         },
         {
             "type": "kernel",
-            "key": "│ ├󰌽 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "bios",
-            "key": "│ ├󰖡 ",
+            "key": " ",
             "keyColor": "white"
         },
         {
             "type": "packages",
-            "key": "│ ├󰏗 ",
+            "format": "{} (pacman)",
+            "key": " ",
             "keyColor": "white"
         },
         {
             "type": "shell",
-            "key": "└ └󰞷 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[97m└────────────────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[97m┌──────────────────────Desktop───────────────────────┐"
-        },
-        {
-            "type": "de",
-            "key": "󰧨  DE",
-            "keyColor": "white"
-        },
-        {
-            "type": "lm",
-            "key": "│ ├󰍁 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "wm",
-            "key": "│ ├󱂬 ",
-            "keyColor": "white"
-        },
-        {
-            "type": "wmtheme",
-            "key": "│ ├󰉦 ",
+            "key": " ",
             "keyColor": "white"
         },
         {
             "type": "terminal",
-            "key": "└ └󰆍 ",
+            "key": " ",
             "keyColor": "white"
         },
         {
-            "type": "custom",
-            "format": "\u001b[97m└────────────────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[97m┌────────────────────Uptime / Age / DT────────────────────┐"
+            "type": "wm",
+            "key": " ",
+            "keyColor": "white"
         },
         {
-            "type": "command",
-            "key": "  ›  OS Age  ",
-            "keyColor": "white",
-            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+            "type": "cursor",
+            "key": " ",
+            "keyColor": "white"
+        },
+        {
+            "type": "terminalfont",
+            "key": " ",
+            "keyColor": "white"
         },
         {
             "type": "uptime",
-            "key": "  ›  Uptime  ",
+            "key": " ",
             "keyColor": "white"
         },
         {
             "type": "datetime",
-            "key": "  ›  DateTime  ",
+            "format": "{1}-{3}-{11}",
+            "key": " ",
             "keyColor": "white"
         },
         {
-            "type": "custom",
-            "format": "\u001b[97m└─────────────────────────────────────────────────────────┘"
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "white"
         },
         {
-            "type": "colors",
-            "paddingLeft": 2,
-            "symbol": "circle"
-        }
+            "type": "player",
+            "key": " ",
+            "keyColor": "white"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m"
+        },
+        "break",
+        "break"
     ]
 }
