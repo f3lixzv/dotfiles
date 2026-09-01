@@ -1,36 +1,36 @@
-# dotfiles
+# f3lixzv/dotfiles
+
+> Personal Arch Linux configuration managed with GNU Stow.
+
 ![Desktop](assets/dotfiles.png)
-My personal configuration files for Arch Linux.
 
-Managed with [GNU Stow](https://www.gnu.org/software/stow/).
+---
 
-## Setup
+### Environment
 
-* OS: Arch Linux
-* WM: Niri
-* Shell: DankMaterialShell
-* Terminal: Kitty
-* Fetch: Fastfetch
-* System monitor: btop
-* Audio visualizer: Cava
-* Discord client: Vesktop
+| Component     | Software          |
+| ------------- | ----------------- |
+| OS            | Arch Linux        |
+| WM            | Niri              |
+| Shell         | Bash + Starship   |
+| Desktop shell | DankMaterialShell |
+| Terminal      | Kitty             |
+| Fetch         | Fastfetch         |
+| Monitor       | btop              |
+| Visualizer    | Cava              |
+| Discord       | Vesktop           |
+| Qt            | qt6ct             |
 
-## Configs
+### Packages
 
 ```text
-btop/
-cava/
-dms/
-fastfetch/
-gtk3/
-gtk4/
-kitty/
-niri/
-qt6ct/
-vesktop/
+btop        cava        dms
+fastfetch   gtk3        gtk4
+kitty       niri        qt6ct
+starship    vesktop
 ```
 
-## Installation
+### Installation
 
 ```bash
 git clone git@github.com:f3lixzv/dotfiles.git ~/dotfiles
@@ -38,7 +38,9 @@ cd ~/dotfiles
 stow */
 ```
 
-## Updating
+### Updating
+
+Changes made through `~/.config` are reflected directly in this repository through Stow.
 
 ```bash
 cd ~/dotfiles
@@ -47,5 +49,6 @@ git commit -m "Update dotfiles"
 git push
 ```
 
-![Desktop](assets/dotfiles.png)
+---
 
+<sub>Arch Linux · Niri · GNU Stow</sub>
